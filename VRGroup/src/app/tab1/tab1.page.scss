@@ -2,3 +2,11 @@
   max-height: 35vh;
   overflow: hidden;
 }
+
+.image img {
+    width: auto;
+    max-width: 100%;
+    float: right;
+    height: auto;
+    max-height: 100%;
+}

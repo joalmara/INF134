@@ -6,4 +6,13 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+	
+	<ion-calendar [(ngModel)]="date"
+	              (change)="onChange($event)"
+	              [type]="type"
+	              [format]="'YYYY-MM-DD'">
+	</ion-calendar>
+
+
+</ion-content>
