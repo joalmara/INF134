@@ -6,7 +6,8 @@ const routes: Routes = [
   { path: 'tab1', loadChildren: './tab1/tab1.module#Tab1PageModule'},
    { path: 'session', loadChildren: './session/session.module#SessionPageModule' },  
     { path: 'test', loadChildren: './test/test.module#TestPageModule' },
-  { path: 'depression-test', loadChildren: './depression-test/depression-test.module#DepressionTestPageModule' },
+   { path: 'depression-test', loadChildren: './depression-test/depression-test.module#DepressionTestPageModule' },
+   { path: 'results/:myid', loadChildren: './results/results.module#ResultsPageModule' },
 
 
 ];

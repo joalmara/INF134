@@ -1,12 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { Router } from '@angular/router';
+import { Injectable } from '@angular/core';
 
 @Component({
   selector: 'app-depression-test',
   templateUrl: './depression-test.page.html',
   styleUrls: ['./depression-test.page.scss'],
 })
+
+
+
 export class DepressionTestPage implements OnInit {
 	selectedOption: any;
 
@@ -30,8 +34,9 @@ export class DepressionTestPage implements OnInit {
 
 	interpretationOfScore: any;
 
+	
 
-	constructor(public router: Router, public navCtrl: NavController) {
+	constructor( public router: Router, private navCtrl: NavController) {
 
 		this.options = ['not at all',
 	'several days', 'more than half the days', 'nearly everyday'
@@ -330,8 +335,6 @@ export class DepressionTestPage implements OnInit {
   	submittedBtn()
   	{
   		this.results = this.Q1 + this.Q2 + this.Q3 + this.Q4 + this.Q5 + this.Q6 +  this.Q7 + this.Q8 + this.Q9 + this.Q10;
-
-
   		console.log(this.results);
 
   		if (this.results >= 0 && this.results <= 4)
@@ -346,12 +349,17 @@ export class DepressionTestPage implements OnInit {
   		{
   			this.interpretationOfScore = "Moderately severe depression";
   		}
-  		else if (this.results >= 20 && this.results <= 27)
+  		else if (this.results >= 20 && this.results <= 30)
   		{
   			this.interpretationOfScore = "Severe depression";
   		}
-
   		console.log(this.interpretationOfScore);
+
+  		var value = this.interpretationOfScore;
+  		this.router.navigate(['/results', this.interpretationOfScore]);
+
+
+  		// this.router.navigate(['results']);
   	}
 
 }
