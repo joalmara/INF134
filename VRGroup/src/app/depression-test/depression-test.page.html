@@ -46,7 +46,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice1" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice1" value="{{option}}" (change)="Q1radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -58,12 +58,12 @@
  </ion-grid>
 
  <ion-text>
-  	2. Ffeeling down, depressed or hopeless?
+  	2. Feeling down, depressed or hopeless?
  </ion-text> 
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice2" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice2" value="{{option}}" (change)="Q2radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -80,7 +80,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice3" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice3" value="{{option}}" (change)="Q3radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -97,7 +97,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice4" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice4" value="{{option}}" (change)="Q4radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -114,7 +114,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice5" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice5" value="{{option}}" (change)="Q5radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -131,7 +131,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice6" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice6" value="{{option}}" (change)="Q6radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -148,7 +148,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice7" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice7" value="{{option}}" (change)="Q7radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -165,7 +165,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice8" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice8" value="{{option}}" (change)="Q8radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -182,7 +182,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice9" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice9" value="{{option}}" (change)="Q9radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -199,7 +199,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice10" value="{{option}}" (change)="radioChangeHandler($event)">
+ 			<input type="radio" name="choice10" value="{{option}}" (change)="Q10radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
@@ -210,6 +210,17 @@
  	</ion-row>
  </ion-grid>
 
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+ 
+    </ion-col>
+    <ion-col>
+      <ion-button shape="round" fill="outline" (click) = submittedBtn()> Submit </ion-button>
+    </ion-col>
+  </ion-row>
+ </ion-grid>
 
 
 
