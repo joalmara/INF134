@@ -9,7 +9,6 @@ const routes: Routes = [
    { path: 'depression-test', loadChildren: './depression-test/depression-test.module#DepressionTestPageModule' },
    { path: 'results/:myid', loadChildren: './results/results.module#ResultsPageModule' },
 
-
 ];
 @NgModule({
   imports: [

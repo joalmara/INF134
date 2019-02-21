@@ -8,7 +8,105 @@
 </ion-header>
 
 <ion-content padding>
-	Results Page
 
-	My Id is: {{passedId}}
+
+  <ion-item>
+    <ion-label text-wrap>
+      <ion-text color="primary">
+        <h1>Results and Next Steps</h1>
+        <h2> RESULTS: {{passedId}} </h2> <br>
+      </ion-text>
+     	<p> If you notice that your symptoms aren't improving, you may want to bring them up with someone you trust </p> <br> 
+     	<p> This screen is not meant to be adiagnosis, or the elemination of a diagnosis. A trained medical or mental health professional can help clarify issues and diagnose depression. </p> <br>
+     	<p> If you feel like your feelings, thoughts, or behaviors get worse, screen again. </p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item>
+  	<ion-label text-wrap>
+  		<ion-text>
+  			<h2> Browse anxiety/depression sessions </h2>
+  		</ion-text>
+  	</ion-label>
+  </ion-item>
+
+   <ion-card class="class-card" >
+    <ion-card-content>
+
+          <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images1-fabric.practo.com/554ae5275874498f13708210194c475687be6106a3b84.jpg/thumbnail">
+              </ion-thumbnail>
+              <ion-label>
+                <h2>Preventing Anxiety</h2>
+                <p>Tues/Thurs 8:00am </p>
+              </ion-label>
+              <ion-button fill="outline" slot="end" (click)="btnClicked()">View</ion-button>
+          </ion-item>
+
+          <ion-item slot="start" text-wrap>
+            Dr. Royce Chan
+          </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+
+     <ion-card class="welcome-card">
+    <ion-card-content>
+
+          <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images1-fabric.practo.com/554af299e008b57aeee35c98205091e18d1140e9f38cf.jpg">
+              </ion-thumbnail>
+              <ion-label>
+                <h2>H2 Title Text</h2>
+                <p>Button on right</p>
+              </ion-label>
+              <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+
+     <ion-card class="class-card">
+    <ion-card-content>
+
+          <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images1-fabric.practo.com/dr-josefino-hernandez-1454412691-56b093933ede1.jpg/thumbnail">
+              </ion-thumbnail>
+              <ion-label>
+                <h2>H2 Title Text</h2>
+                <p>Button on right</p>
+              </ion-label>
+
+              <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+
+     <ion-card class="class-card" >
+    <ion-card-content>
+
+          <ion-item>
+              <ion-thumbnail slot="start">
+                <img src="https://images1-fabric.practo.com/552f5a1499e8601afcfaa6da35faaa3580f25928f53bc.jpg/thumbnail">
+              </ion-thumbnail>
+              <ion-label>
+                <h2>H2 Title Text</h2>
+                <p>Button on right</p>
+              </ion-label>
+              <ion-button fill="outline" slot="end">View</ion-button>
+          </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+
+<button (click) = "goHome()">
+  click me
+</button>
+
 </ion-content>
+
+
