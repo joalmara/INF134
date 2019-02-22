@@ -349,7 +349,7 @@ export class DepressionTestPage implements OnInit {
   		{
   			this.interpretationOfScore = "Moderately severe depression";
   		}
-  		else if (this.results >= 20 && this.results <= 30)
+  		else if (this.results >= 20 && this.results <= 33)
   		{
   			this.interpretationOfScore = "Severe depression";
   		}
