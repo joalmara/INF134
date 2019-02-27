@@ -9,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class SessionPage implements OnInit {
 
+  className = "Preventing Anixety at 8:00am - 9:30am"; // HARDCODED CLASS NAME.
+
   constructor(private router: Router, public navCtrl: NavController) { }
 
   ngOnInit() {
@@ -19,6 +21,6 @@ export class SessionPage implements OnInit {
   }
   
   enrollClass() {
-    this.router.navigate(['success']);
+    this.router.navigate(['/success', this.className]);
   }
 }

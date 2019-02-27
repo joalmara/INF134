@@ -13,5 +13,8 @@ export class Tab2Page {
 
   onChange($event){
   	console.log($event);
+  	console.log("TODAY IS :" + $event._d);
   }
+
+
 }

@@ -34,20 +34,21 @@
                 <img src="https://images1-fabric.practo.com/554ae5275874498f13708210194c475687be6106a3b84.jpg/thumbnail">
               </ion-thumbnail>
               <ion-label>
-                <h2>Preventing Anxiety</h2>
+                <h6 class="title">Preventing Anxiety</h6>
                 <p>Tues/Thurs 8:00am </p>
               </ion-label>
-              <ion-button fill="outline" slot="end" (click)="btnClicked()">View</ion-button>
+              <ion-button fill="outline" slot="end" (click)="btnClicked()" class="viewButton" >View</ion-button>
           </ion-item>
 
-          <ion-item slot="start" text-wrap>
+          <ion-item slot="start" text-wrap class="classDescription"> 
             Dr. Royce Chan
           </ion-item>
       </ion-card-content>
     </ion-card>
 
 
-     <ion-card class="welcome-card">
+
+     <ion-card class="class-card" >
     <ion-card-content>
 
           <ion-item>
@@ -55,13 +56,18 @@
                 <img src="https://images1-fabric.practo.com/554af299e008b57aeee35c98205091e18d1140e9f38cf.jpg">
               </ion-thumbnail>
               <ion-label>
-                <h2>General Health and Welness</h2>
+                <h6 class="title">General Health and Welness</h6>
                 <p>Mon/Wed 1:00pm</p>
               </ion-label>
-              <ion-button fill="outline" slot="end">View</ion-button>
+              <ion-button fill="outline" slot="end" (click)="btnClicked()"  class="viewButton">View</ion-button>
+          </ion-item>
+
+          <ion-item slot="start" text-wrap class="classDescription">
+            Dr. Earl Nguyen  
           </ion-item>
       </ion-card-content>
     </ion-card>
+
 
 
      <ion-card class="class-card">
@@ -72,11 +78,11 @@
                 <img src="https://images1-fabric.practo.com/dr-josefino-hernandez-1454412691-56b093933ede1.jpg/thumbnail">
               </ion-thumbnail>
               <ion-label>
-                <h2>Overcoming Depression</h2>
+                <h6 class="title">Overcoming Depression</h6>
                 <p>Thurs/Fri 10:00am</p>
               </ion-label>
 
-              <ion-button fill="outline" slot="end">View</ion-button>
+              <ion-button fill="outline" slot="end" class="viewButton">View</ion-button>
           </ion-item>
       </ion-card-content>
     </ion-card>
@@ -90,10 +96,10 @@
                 <img src="https://images1-fabric.practo.com/552f5a1499e8601afcfaa6da35faaa3580f25928f53bc.jpg/thumbnail">
               </ion-thumbnail>
               <ion-label>
-                <h2>Dealing With Loss or Grief</h2>
+                <h6 class="title">Dealing With Loss or Grief</h6>
                 <p>Tues/Wed 6:00pm</p>
               </ion-label>
-              <ion-button fill="outline" slot="end">View</ion-button>
+              <ion-button fill="outline" slot="end"  class="viewButton" >View</ion-button>
           </ion-item>
       </ion-card-content>
     </ion-card>

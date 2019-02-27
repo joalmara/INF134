@@ -1,21 +1,18 @@
 <ion-header>
 
-	<ion-toolbar>
-		<button ion-button clear large (click)="goBack()"> 
-			<ion-icon name="arrow-dropleft"> </ion-icon>
-		</button>
-		<ion-title> Success! </ion-title>
-
-		<ion-icon name="star-outline" slot="end"></ion-icon>
-
-	</ion-toolbar>
+  <ion-toolbar>
+    <ion-buttons slot = "start">
+      <ion-back-button defaultHref="/"> </ion-back-button>
+    </ion-buttons>
+    <ion-title> </ion-title>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
   <ion-item>
     <ion-label text-wrap>
       <ion-text color="primary">
-        <h3>You have successfully added the __ class!</h3>
+        <h3>You have successfully added the {{passedId}} class!</h3>
       </ion-text>
       <p>In this class, you will be able to talk to others about an experience regarding anxiety. One will be able to connect with others who have had similar experiences.</p>
     </ion-label>
