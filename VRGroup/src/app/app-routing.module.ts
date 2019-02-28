@@ -10,6 +10,7 @@ const routes: Routes = [
    { path: 'results/:myid', loadChildren: './results/results.module#ResultsPageModule' },
      { path: 'success/:myid', loadChildren: './success/success.module#SuccessPageModule' },
      { path: 'tab2/:myid', loadChildren: './tab2/tab2.module#Tab2PageModule'},
+  { path: 'editprofile', loadChildren: './editprofile/editprofile.module#EditprofilePageModule' },
 
 ];
 @NgModule({

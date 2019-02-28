@@ -16,7 +16,7 @@
 
   <!-- List of Text Items -->
   <ion-list>
-    <ion-item detail="true">
+    <ion-item (click)="btnClicked()" detail="true">
       <ion-label>Edit Profile</ion-label>
     </ion-item>
     <ion-item detail="true">
@@ -28,8 +28,16 @@
     <ion-item detail="true">
       <ion-label>Payment</ion-label>
     </ion-item>
-    <ion-item detail="true">
+    <ion-item>
       <ion-label>Language</ion-label>
+      <ion-select value="english" okText="Okay" cancelText="Dismiss">
+        <ion-select-option value="english">English</ion-select-option>
+        <ion-select-option value="spanish">Espanol</ion-select-option>
+        <ion-select-option value="french">Francais</ion-select-option>
+        <ion-select-option value="italian">Italian</ion-select-option>
+        <ion-select-option value="dutch">Deutsch</ion-select-option>
+        <ion-select-option value="japanese">Japanese</ion-select-option>
+      </ion-select>
     </ion-item>
   </ion-list>
   <ion-list>
