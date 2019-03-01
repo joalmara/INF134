@@ -1,0 +1,81 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot = "start">
+      <ion-button (click) = "goBack()"> X </ion-button>
+    </ion-buttons>
+    <ion-title> </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      Time
+    </ion-col>
+    <ion-col>
+      Day
+    </ion-col>
+    <ion-col>
+      Price
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col col-2>
+      8:00am - 9:30am
+    </ion-col>
+    <ion-col col-9>
+      Tuesday February 26th
+    </ion-col>
+    <ion-col col-1>
+      $65
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  <ion-item>
+    <ion-label text-wrap>
+      <ion-text color="primary">
+        <h3>About Preventing Anxiety Class</h3>
+      </ion-text>
+      <p>In this class, you will be able to talk to others about an experience regarding anxiety. One will be able to connect with others who have had similar experiences.</p>
+    </ion-label>
+  </ion-item>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>  
+    </ion-col>
+    <ion-col>      
+         <img src="https://images1-fabric.practo.com/554ae5275874498f13708210194c475687be6106a3b84.jpg/thumbnail">
+    </ion-col>
+    <ion-col>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+
+  <ion-item>
+    <ion-label text-wrap>
+      <ion-text color="primary">
+        <h3> Meet the Instructor </h3>
+      </ion-text>
+      <p>My name is Royce Chan and I have over 10 years of experience as a therapist. I graduated with my Ph.D from UCLA in Psychology. My passion is to help those overcome negative experience that they may have had with anxiety.</p>
+    </ion-label>
+  </ion-item>
+
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-button shape="round" fill="outline" (click) = "loadData()">Ask a Question</ion-button>
+    </ion-col>
+    <ion-col>
+      <ion-button shape="round" fill="outline" (click)="cancelBtn()">Cancel class</ion-button>
+    </ion-col>
+  </ion-row>
+ </ion-grid>
+
+</ion-content>

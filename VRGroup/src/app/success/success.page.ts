@@ -34,4 +34,7 @@ export class SuccessPage implements OnInit {
 
   }
 
+  cancelBtn(){
+    this.classData.allClasses.pop();
+  }
 }

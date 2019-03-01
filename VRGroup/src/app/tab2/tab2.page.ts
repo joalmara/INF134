@@ -5,6 +5,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Storage } from '@ionic/storage';
 import { SuccessPage } from '../success/success.page';
 import { ClassDataService } from '../class-data.service'
+import { EnrolledClassPage } from '../enrolled-class/enrolled-class.page';
+
 @Component({
   selector: 'app-tab2',
   templateUrl: 'tab2.page.html',
@@ -23,7 +25,7 @@ export class Tab2Page {
 
   classValue: string;
 
-  constructor(public classData: ClassDataService, public modalController: ModalController, private storage: Storage, private router: Router, public navCtrl: NavController, private activatedRoute: ActivatedRoute) { }
+  constructor(public modalCtrl: ModalController, public classData: ClassDataService, public modalController: ModalController, private storage: Storage, private router: Router, public navCtrl: NavController, private activatedRoute: ActivatedRoute) { }
 
   onChange($event){
   	//console.log($event);
@@ -73,8 +75,13 @@ export class Tab2Page {
     })
   }
 
-  btnClicked(){
-      this.router.navigate(['session']);
+  async btnClicked(){
+    const modal = await this.modalCtrl.create({
+        component: EnrolledClassPage
+      });
+    //this.router.navigate(['tab2']);
+         return  await modal.present();
+
   }
 
 
