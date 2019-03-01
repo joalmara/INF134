@@ -19,7 +19,7 @@ export class SuccessPage implements OnInit {
 		let data = {
 			class: 'Preventing Anxiety',
 			time: '8:00am - 9:30am',
-			day: 'Tuesday/Thursday'
+			days: ['Tue','Thu']
 		};
 		this.modalController.dismiss(data);
 
