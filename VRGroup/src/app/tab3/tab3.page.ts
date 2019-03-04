@@ -17,4 +17,5 @@ export class Tab3Page {
 		this.router.navigate(['editprofile']);
 	}
 
+
 }
