@@ -10,6 +10,7 @@ import { ClassDataService } from '../class-data.service'
   styleUrls: ['./askquestion.page.scss'],
 })
 export class AskquestionPage implements OnInit {
+  
 
   constructor(public modalController: ModalController, private router: Router, public navCtrl: NavController, private activatedRoute: ActivatedRoute) { }
 
