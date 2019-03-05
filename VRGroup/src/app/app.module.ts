@@ -11,12 +11,12 @@ import { AppComponent } from './app.component';
 import { IonicStorageModule } from '@ionic/storage';
 import { SuccessPage } from './success/success.page';
 import { EnrolledClassPage } from './enrolled-class/enrolled-class.page';
-
+import { AskquestionPage } from './askquestion/askquestion.page'
 
 
 @NgModule({
-  declarations: [AppComponent, SuccessPage, EnrolledClassPage],
-  entryComponents: [SuccessPage, EnrolledClassPage],
+  declarations: [AppComponent, SuccessPage, EnrolledClassPage, AskquestionPage],
+  entryComponents: [SuccessPage, EnrolledClassPage, AskquestionPage],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicStorageModule.forRoot()],
   providers: [
     StatusBar,

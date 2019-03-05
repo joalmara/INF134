@@ -14,6 +14,7 @@ const routes: Routes = [
      { path: 'tab2/:myid', loadChildren: './tab2/tab2.module#Tab2PageModule'},
   { path: 'editprofile', loadChildren: './editprofile/editprofile.module#EditprofilePageModule' },
   { path: 'enrolled-class', loadChildren: './enrolled-class/enrolled-class.module#EnrolledClassPageModule' },
+  { path: 'askquestion', loadChildren: './askquestion/askquestion.module#AskquestionPageModule' },
 
 
 ];
