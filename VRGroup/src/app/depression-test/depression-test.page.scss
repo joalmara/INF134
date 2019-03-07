@@ -1,0 +1,22 @@
+input[type="radio"] {
+   display: none;
+}
+
+input[type="radio"]{
+   height: 40px;
+   width: 40px;
+   display: inline-block;
+   cursor: pointer;
+   vertical-align: middle;
+   background: #FFF;
+   border: 1px solid #d2d2d2;
+   border-radius: 100%;
+}
+
+input[type="radio"] {
+    border-color: #c2c2c2;
+}
+
+input[type="radio"]:checked {
+    background:gray;
+}

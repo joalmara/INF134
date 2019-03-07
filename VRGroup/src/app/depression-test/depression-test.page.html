@@ -45,7 +45,7 @@
  <ion-grid>
  	<ion-row>
 		<ion-col col-12 col-sm  *ngFor="let option of options" >
- 			<input type="radio" name="choice1" value="{{option}}" (change)="Q1radioChangeHandler($event)">
+ 			<input class="container" type="radio" name="choice1" value="{{option}}" (change)="Q1radioChangeHandler($event)">
  			<label class= "item item-radio">
  				<div class="item-content">
  					<i> {{option}} </i>
