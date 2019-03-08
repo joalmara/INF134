@@ -3,8 +3,8 @@ input[type="radio"] {
 }
 
 input[type="radio"]{
-   height: 40px;
-   width: 40px;
+   height: 38px;
+   width: 38px;
    display: inline-block;
    cursor: pointer;
    vertical-align: middle;
@@ -19,4 +19,16 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
     background:gray;
+}
+
+.title{
+    font-size:160%;
+    color: #4d8ff9;
+}
+
+.paragraph{
+    font-size:120%;
+}
+.question{
+      font-size: 140%;
 }
