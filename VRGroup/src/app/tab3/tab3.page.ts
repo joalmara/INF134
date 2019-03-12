@@ -12,11 +12,33 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 export class Tab3Page {
 
   myphoto:any="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y";
-  constructor(public router: Router, public navCtrl: NavController, private camera: Camera) {}
+  constructor(public router: Router, public navCtrl: NavController, private camera: Camera) {
+    if (typeof this.router.getCurrentNavigation().extras.state === "undefined"){
+      console.log('not edit profile');
+    }
+    else{
+      this.myphoto = this.router.getCurrentNavigation().extras.state.photo;
+    }
+    console.log(this.router.getCurrentNavigation().extras.state)
+  }
+
+  ngOnInit () {
+    if (typeof this.router.getCurrentNavigation().extras.state === "undefined"){
+      console.log('not edit profile');
+    }
+    else{
+      this.myphoto = this.router.getCurrentNavigation().extras.state.photo;
+    }
+    console.log(this.router.getCurrentNavigation().extras.state)
+  }
 
 	btnClicked(){
 		console.log(" btn is clicked");
-		this.router.navigate(['editprofile']);
+		this.router.navigate(['editprofile'], { state: {photo: this.myphoto} } );
+  }
+  paymentClicked(){
+		console.log(" btn is clicked");
+		this.router.navigate(['paypal']);
   }
   
   getImage() {
