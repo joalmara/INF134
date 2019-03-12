@@ -1,0 +1,34 @@
+input[type="radio"] {
+   display: none;
+}
+
+input[type="radio"]{
+   height: 38px;
+   width: 38px;
+   display: inline-block;
+   cursor: pointer;
+   vertical-align: middle;
+   background: #FFF;
+   border: 1px solid #d2d2d2;
+   border-radius: 100%;
+}
+
+input[type="radio"] {
+    border-color: #c2c2c2;
+}
+
+input[type="radio"]:checked {
+    background:gray;
+}
+
+.title{
+    font-size:160%;
+    color: #4d8ff9;
+}
+
+.paragraph{
+    font-size:120%;
+}
+.question{
+      font-size: 140%;
+}
